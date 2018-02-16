@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('TEST') {
       steps {
-        echo '"Hello"'
+        echo '"Hello World"'
       }
     }
     stage('Install') {
       steps {
-        bat '"C:\\\\apache-maven-3.3.9\\\\bin\\\\mvn.cmd" test'
+        bat '"C:\\apache-maven-3.3.9\\bin\\mvn.cmd" test'
       }
     }
   }
